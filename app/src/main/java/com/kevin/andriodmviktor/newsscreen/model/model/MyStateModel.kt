@@ -5,7 +5,7 @@ import com.kevin.andriodmviktor.newsscreen.model.repository.NewsRepository
 import com.kevin.andriodmviktor.newsscreen.model.viewState.NewsState
 import javax.inject.Inject
 
-class MyModel @Inject constructor(private val repository: NewsRepository) {
+class MyStateModel @Inject constructor(private val repository: NewsRepository) {
 
     suspend fun processIntent(intent: NewsIntent, state: NewsState): NewsState {
         return when (intent) {

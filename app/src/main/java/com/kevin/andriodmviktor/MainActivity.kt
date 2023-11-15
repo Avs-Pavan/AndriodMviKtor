@@ -1,4 +1,4 @@
-package com.kevin.andriodmviktor.newsscreen.view
+package com.kevin.andriodmviktor
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -10,7 +10,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.lifecycle.viewmodel.compose.viewModel
+import com.kevin.andriodmviktor.remotenewsscreen.view.RemoteNewsScreen
 import com.kevin.andriodmviktor.ui.theme.AndriodMviKtorTheme
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -25,7 +25,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    NewsScreen()
+                    RemoteNewsScreen()
                 }
             }
         }

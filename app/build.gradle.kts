@@ -63,7 +63,6 @@ dependencies {
     implementation("androidx.compose.material3:material3")
 
 
-
     // room components
     implementation("androidx.room:room-runtime:2.6.0")
     implementation("androidx.room:room-ktx:2.6.0")
@@ -78,8 +77,6 @@ dependencies {
     implementation("androidx.compose.runtime:runtime-livedata:1.5.4")
 
 
-
-
     //coroutines
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.1")
@@ -90,7 +87,20 @@ dependencies {
     implementation("androidx.hilt:hilt-navigation-compose:1.0.0")
 
 
+//    // Ktor
+//    implementation("io.ktor:ktor-client-android:1.5.0")
+//    implementation("io.ktor:ktor-client-serialization:1.5.0")
+//    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.0.1")
+//    implementation("io.ktor:ktor-client-logging-jvm:1.5.0")
 
+
+
+    //retrofit
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+
+    // logging
+    implementation("com.squareup.okhttp3:logging-interceptor:4.9.1")
 
 
 

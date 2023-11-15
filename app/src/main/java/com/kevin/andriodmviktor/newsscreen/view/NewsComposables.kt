@@ -28,6 +28,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.kevin.andriodmviktor.newsscreen.intent.NewsIntent
 import com.kevin.andriodmviktor.newsscreen.model.db.entity.NewsData
@@ -54,6 +55,7 @@ fun NewsScreen(viewModel: NewsViewModel = androidx.lifecycle.viewmodel.compose.v
     when (state) {
         is NewsState.Loading -> {
             Log.e("Tag", "... loading..")
+            // show loading
         }
 
         is NewsState.ActionSuccess -> {
@@ -160,6 +162,14 @@ fun NewsRow(news: NewsData) {
         ) {
             Text(text = news.title, fontWeight = FontWeight.Bold)
             Text(text = news.content, fontStyle = FontStyle.Italic)
+
+            Text(
+                text = "Delete",
+                fontStyle = FontStyle.Italic,
+                color = Color.Red,
+                textAlign = TextAlign.End
+            )
+
         }
     }
 
