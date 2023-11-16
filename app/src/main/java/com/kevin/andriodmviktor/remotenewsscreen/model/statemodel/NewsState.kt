@@ -17,6 +17,7 @@ class NewsState @Inject constructor(private val repository: RemoteNewRepository)
                     if (response.isSuccessful) {
                         Log.e(TAG, "Fetching news from api -- success")
                         response.body()?.articles?.let { RemoteNewsState.NewsList(it) }
+
                     } else {
                         Log.e(TAG, "Fetching news from api -- failed")
                         RemoteNewsState.Error("Error fetching news")
